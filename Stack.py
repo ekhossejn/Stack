@@ -20,8 +20,7 @@ class MyStack():
         self.__data.append(int(element))
  
     def __repr__(self):
-        s = ', '.join(map(str, self.data))
-        return 'MyStack({})'.format(s)
+        return 'MyStack({})'.format(', '.join(map(str, self.data)))
  
     def get_data(self) -> list:
         return self.__data[:]
